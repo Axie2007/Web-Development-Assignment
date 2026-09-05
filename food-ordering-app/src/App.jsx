@@ -161,23 +161,17 @@ function App() {
         );
 
     };
-
-
     // Calculate total items
     const totalItems = cart.reduce(
         (total, item) => total + item.quantity,
         0
     );
-
-
     // Calculate total price
     const totalPrice = cart.reduce(
         (total, item) =>
             total + item.price * item.quantity,
         0
     );
-
-
     // Filter food
     const filteredFoods = foods.filter(food => {
 
